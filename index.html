@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yarok – Syrisches Restaurant Berlin</title>
-  <meta name="description" content="Yarok – syrisches Restaurant, Torstraße 195, 10115 Berlin. Falafel, Fladenbrote, Salate und Platten. Vegan, zum Mitnehmen und Lieferung.">
+  <title>Yarok – Fine Food from Damaskus · Berlin</title>
+  <meta name="description" content="Yarok – feines syrisches Essen aus Damaskus. Torstraße 195, 10115 Berlin. Täglich 14–23 Uhr. Frisch zubereitet, zum Abholen.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
@@ -13,57 +13,120 @@
 <body>
 
   <header class="header wrap">
-    <span class="logo">Yarok</span>
-    <!-- TELEFONNUMMER: hier und unten bei "Kontakt" eintragen (href im Format tel:+4930...) -->
-    <a class="header__call" href="tel:+4930XXXXXXXX" aria-label="Yarok anrufen">Anrufen</a>
+    <a href="#top" class="logo">Yarok</a>
+    <nav class="nav">
+      <a href="#speisekarte">Speisekarte</a>
+      <a href="#tahine">Tahine</a>
+      <a href="#standorte">Standorte</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
   </header>
 
-  <main>
+  <main id="top">
+    <!-- HERO -->
     <section class="hero wrap">
-      <p class="kicker">Syrisches Restaurant · Berlin-Mitte</p>
-      <h1>Falafel, Hummus<br>&amp; frisches Brot.</h1>
+      <p class="kicker">Fine Food from Damaskus · Berlin</p>
+      <h1>Feines syrisches Essen<br>– frisch &amp; mit Liebe.</h1>
       <div class="actions">
-        <a class="btn" href="tel:+4930XXXXXXXX">Anrufen</a>
-        <a class="btn btn--outline" href="https://www.google.com/maps/search/?api=1&query=Yarok+Torstra%C3%9Fe+195+10115+Berlin" target="_blank" rel="noopener">Route</a>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Yarok+Torstra%C3%9Fe+195+10115+Berlin" target="_blank" rel="noopener">Route planen</a>
+        <a class="btn btn--outline" href="#speisekarte">Speisekarte</a>
+      </div>
+      <p class="hours-pill"><span class="dot"></span>Täglich 14:00 – 23:00 Uhr</p>
+    </section>
+
+    <!-- ÜBER UNS -->
+    <section class="section wrap split" id="ueber-uns">
+      <h2>Über uns</h2>
+      <div>
+        <p class="big">Unsere Gerichte werden persönlich und liebevoll mit frischen Zutaten zubereitet und schnell serviert – syrische Küche, an den europäischen Geschmack angepasst, ohne ihre Authentizität zu verlieren.</p>
+        <p class="muted"><strong>Yarok</strong> heißt auf Hebräisch „Grün“. Da unsere Küche aus Syrien stammt, steht der Name für die Solidarität zwischen allen Völkern. Guten Appetit!</p>
       </div>
     </section>
 
-    <section class="menu wrap" aria-labelledby="menu-title">
-      <h2 id="menu-title">Auf der Karte</h2>
-      <!-- Gerichte sind Beispiele – bitte mit der echten Karte abgleichen. -->
-      <ul class="dishes">
-        <li>Falafel Sandwich</li>
-        <li>Gemischte Platte</li>
-        <li>Hummus &amp; Baba Ghanoush</li>
-        <li>Fattoush &amp; Tabouleh</li>
-      </ul>
-      <p class="tags">Vegan · Zum Mitnehmen · Lieferung · Draußen sitzen</p>
+    <!-- SPEISEKARTE -->
+    <section class="section wrap split" id="speisekarte">
+      <h2>Speisekarte</h2>
+      <div>
+        <!--
+          SPEISEKARTE: Die Original-Karte ("Speisekarte 2024") liegt auf der alten Website
+          nur als Bild vor. Gerichte + Preise hier als <li> eintragen, z. B.:
+          <li><span>Falafel Sandwich</span><span class="price">0,00 €</span></li>
+        -->
+        <ul class="dishes">
+          <li><span>Falafel Sandwich</span></li>
+        </ul>
+        <p class="muted small">Alle Preise vorbehaltlich der aktuellen Speisekarte im Restaurant.</p>
+      </div>
     </section>
 
-    <section class="contact wrap" aria-labelledby="contact-title">
-      <h2 id="contact-title" class="sr-only">Kontakt</h2>
+    <!-- TAHINE -->
+    <section class="section section--green" id="tahine">
+      <div class="wrap split">
+        <h2>Sham Tahine</h2>
+        <div>
+          <p class="big">Unsere Tahine wird aus ausgewählten Sesamsamen nach traditioneller syrischer Art hergestellt – gewaschen, geschält, leicht geröstet und fein gemahlen.</p>
+          <p>Das Ergebnis: eine nussige, cremige Paste, die Geschmack und Nährwerte bewahrt.</p>
+          <ul class="chips">
+            <li>Reich an Protein</li>
+            <li>Calcium, Eisen, Magnesium</li>
+            <li>Vitamine A, B1, B2, B6</li>
+            <li>Omega 3 &amp; 6</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-      <a class="contact__item" href="https://www.google.com/maps/search/?api=1&query=Yarok+Torstra%C3%9Fe+195+10115+Berlin" target="_blank" rel="noopener">
-        <span class="label">Adresse</span>
-        <span class="value">Torstraße 195<br>10115 Berlin</span>
-      </a>
+    <!-- GUT ZU WISSEN -->
+    <section class="section wrap" aria-labelledby="info-title">
+      <h2 id="info-title" class="center">Gut zu wissen</h2>
+      <div class="facts">
+        <div class="fact"><span class="fact__ico" aria-hidden="true">🕑</span><strong>Täglich geöffnet</strong><span>14:00 – 23:00 Uhr</span></div>
+        <div class="fact"><span class="fact__ico" aria-hidden="true">💶</span><strong>Bezahlung</strong><span>Bar oder EC-Karte</span></div>
+        <div class="fact"><span class="fact__ico" aria-hidden="true">🥡</span><strong>Zum Abholen</strong><span>Kein Lieferdienst – Bestellung nur im Restaurant</span></div>
+        <div class="fact"><span class="fact__ico" aria-hidden="true">🐕</span><strong>Hunde willkommen</strong><span>Mit Wasserschale</span></div>
+      </div>
+    </section>
 
-      <a class="contact__item" href="tel:+4930XXXXXXXX">
-        <span class="label">Telefon</span>
-        <span class="value">030 XXX XXX XX</span>
-      </a>
+    <!-- STANDORTE -->
+    <section class="section wrap" id="standorte">
+      <h2 class="center">Standorte</h2>
+      <div class="locations">
+        <a class="location" href="https://www.google.com/maps/search/?api=1&query=Yarok+Torstra%C3%9Fe+195+10115+Berlin" target="_blank" rel="noopener">
+          <span class="label">Mitte</span>
+          <span class="value">Torstraße 195<br>10115 Berlin</span>
+          <span class="go">Route öffnen →</span>
+        </a>
+        <a class="location" href="https://www.google.com/maps/search/?api=1&query=Wilhelmstra%C3%9Fe+41a+10963+Berlin" target="_blank" rel="noopener">
+          <span class="label">Kreuzberg</span>
+          <span class="value">Wilhelmstraße 41a<br>10963 Berlin</span>
+          <span class="go">Route öffnen →</span>
+        </a>
+      </div>
+    </section>
 
-      <div class="contact__item">
-        <span class="label">Geöffnet</span>
-        <!-- Öffnungszeiten je Wochentag ergänzen -->
-        <span class="value">bis 23:00 Uhr</span>
+    <!-- KONTAKT -->
+    <section class="section wrap" id="kontakt">
+      <h2 class="center">Kontakt</h2>
+      <div class="contact">
+        <!-- TELEFONNUMMER: in href (tel:+49...) und im Text eintragen -->
+        <a class="contact__btn" href="tel:+49XXXXXXXXXX">
+          <span class="label">Telefon</span>
+          <span class="value">Nummer folgt</span>
+        </a>
+        <a class="contact__btn" href="mailto:yarok1204@gmail.com">
+          <span class="label">E-Mail</span>
+          <span class="value">yarok1204@gmail.com</span>
+        </a>
       </div>
     </section>
   </main>
 
   <footer class="footer wrap">
-    <span>© <span id="year"></span> Yarok</span>
-    <span><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
+    <span>© <span id="year"></span> Yarok Restaurant · Fine Food from Damaskus</span>
+    <span>
+      <a href="https://www.yarok-restaurant.de/kontakt-impressum-2/">Impressum</a> ·
+      <a href="https://www.yarok-restaurant.de/datenschutzerklaerung/">Datenschutz</a>
+    </span>
   </footer>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
