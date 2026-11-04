@@ -44,19 +44,146 @@
     </section>
 
     <!-- SPEISEKARTE -->
-    <section class="section wrap split" id="speisekarte">
+    <section class="section wrap" id="speisekarte">
       <h2>Speisekarte</h2>
-      <div>
-        <!--
-          SPEISEKARTE: Die Original-Karte ("Speisekarte 2024") liegt auf der alten Website
-          nur als Bild vor. Gerichte + Preise hier als <li> eintragen, z. B.:
-          <li><span>Falafel Sandwich</span><span class="price">0,00 €</span></li>
-        -->
-        <ul class="dishes">
-          <li><span>Falafel Sandwich</span></li>
-        </ul>
-        <p class="muted small">Alle Preise vorbehaltlich der aktuellen Speisekarte im Restaurant.</p>
+      <p class="muted howto">Bestellen &amp; bezahlen an der Kasse mit der Menünummer – wir bringen euch das Essen an den Tisch. Softdrinks nehmt ihr euch selbst aus dem Kühlschrank.</p>
+
+      <div class="tabs" role="tablist" aria-label="Kategorien">
+        <button class="tab is-active" role="tab" aria-selected="true" data-tab="sandwich">Sandwiches</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="platten">Platten</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="mix">Mix-Platten</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="salat">Salate &amp; Suppen</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="beilagen">Beilagen</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="suess">Süßes</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="getraenke">Getränke</button>
       </div>
+
+      <!-- SANDWICHES -->
+      <div class="panel" data-panel="sandwich" role="tabpanel">
+        <p class="panel__note">Arabisches Pita-Sandwich, immer frisch zubereitet – mit Römersalat, frischer Minze, Tomaten, Gurken, Karotten, Sesam- und Zitronensoße.</p>
+        <ul class="dishes">
+          <li><span class="no">50</span><span class="name">Falafel Sandwich<small>Falafel</small></span><span class="price">6,00 €</span></li>
+          <li><span class="no">51</span><span class="name">Kebab Sandwich<small>Gegrilltes, würziges Rinderhack &amp; Pommes</small></span><span class="price">6,00 €</span></li>
+          <li><span class="no">52</span><span class="name">Halloumi Sandwich<small>Gebratener Halloumi aus Ziegenmilch</small></span><span class="price">6,00 €</span></li>
+          <li><span class="no">53</span><span class="name">Makali Sandwich<small>Frittiertes Saisongemüse</small></span><span class="price">6,00 €</span></li>
+          <li><span class="no">54</span><span class="name">Egge Sandwich<small>Zucchini &amp; Saisongemüse im Weizen-Kichererbsen-Teig</small></span><span class="price">6,00 €</span></li>
+          <li><span class="no">58</span><span class="name">Chicken Sandwich<small>Hähnchenbruststreifen, viele Kräuter &amp; Pommes</small></span><span class="price">6,00 €</span></li>
+        </ul>
+        <p class="panel__note">Extrawünsche +1,00 € · Vegan auf Wunsch</p>
+      </div>
+
+      <!-- PLATTEN -->
+      <div class="panel" data-panel="platten" role="tabpanel" hidden>
+        <h3>Vegetarisch &amp; vegan</h3>
+        <ul class="dishes">
+          <li><span class="no">11</span><span class="name">Falafel-Platte<small>Frittierte, würzige Kichererbsenbällchen</small></span><span class="price">9,00 €</span></li>
+          <li><span class="no">12</span><span class="name">Halloumi-Platte<small>Gebratener Halloumi mit Pommes</small></span><span class="price">9,00 €</span></li>
+          <li><span class="no">13</span><span class="name">Makali-Platte<small>Verschiedene frittierte Gemüse</small></span><span class="price">9,00 €</span></li>
+          <li><span class="no">14</span><span class="name">Egge-Platte<small>Saisongemüse im Weizen-Kichererbsen-Teig</small></span><span class="price">9,00 €</span></li>
+        </ul>
+        <p class="panel__note">Mit Römersalat &amp; Minzsalat, Hummus, Sesam- und Zitronensoße und Brot. Auf Wunsch vegan.</p>
+
+        <h3>Mit Fleisch</h3>
+        <ul class="dishes">
+          <li><span class="no">8</span><span class="name">Chicken Salad<small>Hähnchenbruststreifen mit vielen Kräutern</small></span><span class="price">10,00 €</span></li>
+          <li><span class="no">21</span><span class="name">Kebab-Platte<small>Gegrilltes, würziges Rinderhack</small></span><span class="price">10,00 €</span></li>
+          <li><span class="no">27</span><span class="name">Schawarma aus der Pfanne<small>Marinierte Hähnchenstreifen in Oliven-Knoblauch-Soße mit Röstgemüse</small></span><span class="price">10,00 €</span></li>
+        </ul>
+        <p class="panel__note">Mit Pommes, Römersalat &amp; Minzsalat, Hummus, Sesam- und Zitronensoße und Brot.</p>
+      </div>
+
+      <!-- MIX -->
+      <div class="panel" data-panel="mix" role="tabpanel" hidden>
+        <p class="panel__note">Von allem ein bisschen – vegetarisch, auf Wunsch vegan.</p>
+        <ul class="dishes">
+          <li><span class="no">18</span><span class="name">Mix-Platte für eine Person</span><span class="price">11,00 €</span></li>
+          <li><span class="no">20</span><span class="name">Mix-Platte für zwei</span><span class="price">21,00 €</span></li>
+          <li><span class="no">29</span><span class="name">Mix-Platte für 3 bis 9 Personen<small>Ideal für Gruppen</small></span><span class="price">10,00 € p. P.</span></li>
+        </ul>
+      </div>
+
+      <!-- SALATE & SUPPEN -->
+      <div class="panel" data-panel="salat" role="tabpanel" hidden>
+        <h3>Salate</h3>
+        <ul class="dishes">
+          <li><span class="no">1</span><span class="name">Fattoush<small>Römersalat, Minze, geröstetes Brot, Gurke, Tomate, Walnüsse, Zitrone &amp; Olivenöl</small></span><span class="price">8,00 €</span></li>
+          <li><span class="no">5</span><span class="name">Tabouleh<small>Petersilie, Tomate, Walnüsse, Zitrone, Olivenöl &amp; Weizengrieß</small></span><span class="price">8,00 €</span></li>
+        </ul>
+        <p class="panel__note">Mit Hummus, gerösteten Walnüssen, Sesam- und Zitronensoße und Brot. Auf Wunsch vegan.</p>
+
+        <h3>Suppen</h3>
+        <!-- Zuordnung Nr. 3 / Nr. 4 bitte prüfen – auf der Original-Karte schwer lesbar -->
+        <ul class="dishes">
+          <li><span class="no">3</span><span class="name">Kichererbsen-Cremesuppe mit Hähnchen<small>Mit Hähnchenbruststreifen &amp; Kräutern</small></span><span class="price">6,00 €</span></li>
+          <li><span class="no">4</span><span class="name">Kichererbsen-Cremesuppe mit Halloumi<small>Vegetarisch, mit Kräutern</small></span><span class="price">6,00 €</span></li>
+        </ul>
+      </div>
+
+      <!-- BEILAGEN -->
+      <div class="panel" data-panel="beilagen" role="tabpanel" hidden>
+        <ul class="dishes dishes--compact">
+          <li><span class="no">61</span><span class="name">Falafel</span><span class="price">3,00 €</span></li>
+          <li><span class="no">62</span><span class="name">Halloumi</span><span class="price">3,00 €</span></li>
+          <li><span class="no">63</span><span class="name">Hummus</span><span class="price">3,00 €</span></li>
+          <li><span class="no">64</span><span class="name">Tabouleh</span><span class="price">3,00 €</span></li>
+          <li><span class="no">65</span><span class="name">Couscous-Salat</span><span class="price">3,00 €</span></li>
+          <li><span class="no">66</span><span class="name">Mutabbal<small>Rauchige Auberginencreme</small></span><span class="price">3,00 €</span></li>
+          <li><span class="no">67</span><span class="name">Egge</span><span class="price">3,00 €</span></li>
+          <li><span class="no">68</span><span class="name">Fuul<small>Ackerbohnen, Kichererbsen, Zitrone, Oliven – kalt</small></span><span class="price">3,00 €</span></li>
+          <li><span class="no">69</span><span class="name">Gemischter Salat</span><span class="price">3,00 €</span></li>
+          <li><span class="no">70</span><span class="name">Sesam-Zitronen-Soße</span><span class="price">1,00 €</span></li>
+          <li><span class="no">71</span><span class="name">Makali</span><span class="price">3,00 €</span></li>
+          <li><span class="no">72</span><span class="name">Blätterteig mit Spinat<small>Minze, Mandeln &amp; Soja-Käse</small></span><span class="price">3,00 €</span></li>
+          <li><span class="no">73</span><span class="name">Frittierte Aubergine</span><span class="price">3,00 €</span></li>
+          <li><span class="no">74</span><span class="name">Pommes</span><span class="price">3,00 €</span></li>
+          <li><span class="no">75</span><span class="name">Blätterteig mit Rind<small>Karotten, Rosinen &amp; Mandeln</small></span><span class="price">3,00 €</span></li>
+          <li><span class="no">76</span><span class="name">Kebab</span><span class="price">4,00 €</span></li>
+          <li><span class="no">77</span><span class="name">Schawarma</span><span class="price">4,00 €</span></li>
+          <li><span class="no">78</span><span class="name">Chicken Salad</span><span class="price">4,00 €</span></li>
+          <li><span class="no">79</span><span class="name">Pita</span><span class="price">1,00 €</span></li>
+        </ul>
+      </div>
+
+      <!-- SÜSSES -->
+      <div class="panel" data-panel="suess" role="tabpanel" hidden>
+        <ul class="dishes">
+          <li><span class="no"></span><span class="name">Kunafe<small>Grießfäden auf Weichkäse, Pistazien, Rosenwassersirup &amp; hausgemachtes Pistazieneis</small></span><span class="price">7,00 €</span></li>
+          <li><span class="no"></span><span class="name">Baklawa<small>Verschiedene Sorten, z. B. mit Mandeln, Nüssen oder Datteln</small></span><span class="price">2,00 € / Stk.</span></li>
+          <li><span class="no"></span><span class="name">Mocca 0,1 l<small>Syrischer Kaffee mit Kardamom</small></span><span class="price">3,00 €</span></li>
+        </ul>
+        <p class="panel__note">Unsere arabischen Süßigkeiten findet ihr in der Vitrine an der Kasse.</p>
+      </div>
+
+      <!-- GETRÄNKE -->
+      <div class="panel" data-panel="getraenke" role="tabpanel" hidden>
+        <h3>Frisch &amp; hausgemacht</h3>
+        <ul class="dishes">
+          <li><span class="no"></span><span class="name">Limonade<small>Zitrone, Limette, frische Minze &amp; Rosenwasser</small></span><span class="price">3,00 €</span></li>
+          <li><span class="no"></span><span class="name">Frisch gepresster Orangensaft</span><span class="price">3,00 €</span></li>
+          <li><span class="no"></span><span class="name">Ayran<small>Joghurtgetränk mit frischer Minze</small></span><span class="price">3,00 €</span></li>
+        </ul>
+        <h3>Frischer Tee · 0,25 l</h3>
+        <ul class="dishes">
+          <li><span class="no"></span><span class="name">Ingwertee<small>Frischer Ingwer, getrocknete Limette &amp; Honig</small></span><span class="price">3,00 €</span></li>
+          <li><span class="no"></span><span class="name">Orient-Tee<small>Schwarztee, Honig, Limette, Zimt &amp; Kardamom</small></span><span class="price">3,00 €</span></li>
+          <li><span class="no"></span><span class="name">Frischer Minztee<small>Mit getrockneter Limette &amp; Honig</small></span><span class="price">3,00 €</span></li>
+          <li><span class="no"></span><span class="name">Syrischer Mate-Tee<small>Traditionell in der Kalebasse mit Honig</small></span><span class="price">3,00 €</span></li>
+        </ul>
+        <h3>Softdrinks &amp; Bier</h3>
+        <ul class="dishes">
+          <li><span class="no"></span><span class="name">Mineralwasser 0,33 l<small>Still oder sprudelnd</small></span><span class="price">2,00 €</span></li>
+          <li><span class="no"></span><span class="name">Softdrinks 0,33 l<small>Verschiedene Sorten</small></span><span class="price">3,00 €</span></li>
+          <li><span class="no"></span><span class="name">Pilsner Urquell 0,33 l</span><span class="price">3,00 €</span></li>
+          <li><span class="no"></span><span class="name">Heineken alkoholfrei 0,33 l</span><span class="price">3,00 €</span></li>
+        </ul>
+      </div>
+
+      <details class="allergens">
+        <summary>Zusatzstoffe &amp; Allergene</summary>
+        <p>1 Gluten (Weizen) · 2 Zucker · 3 Farbstoff · 4 Milch/Laktose · 5 Sesam · 6 Pistazien · 7 Koffeinhaltig · 8 Geschmacksverstärker · 9 Soja · 10 Erdnüsse · 11 Haselnüsse · 12 Mandeln · 13 Walnuss · 14 Konservierungsstoff</p>
+        <p>Fragt unser Personal gerne nach den Allergenen einzelner Gerichte und sagt uns Bescheid, wenn ihr vegan oder glutenfrei essen möchtet.</p>
+      </details>
+      <p class="muted small">Alle Preise vorbehaltlich der aktuellen Speisekarte im Restaurant.</p>
     </section>
 
     <!-- TAHINE -->
@@ -84,6 +211,10 @@
         <div class="fact"><span class="fact__ico" aria-hidden="true">💶</span><strong>Bezahlung</strong><span>Bar oder EC-Karte</span></div>
         <div class="fact"><span class="fact__ico" aria-hidden="true">🥡</span><strong>Zum Abholen</strong><span>Kein Lieferdienst – Bestellung nur im Restaurant</span></div>
         <div class="fact"><span class="fact__ico" aria-hidden="true">🐕</span><strong>Hunde willkommen</strong><span>Mit Wasserschale</span></div>
+        <div class="fact"><span class="fact__ico" aria-hidden="true">🪑</span><strong>Keine Reservierung</strong><span>Jeder Platz ist frei</span></div>
+        <div class="fact"><span class="fact__ico" aria-hidden="true">🌱</span><strong>Vegan &amp; glutenfrei</strong><span>Auf Wunsch – sagt uns einfach Bescheid</span></div>
+        <div class="fact"><span class="fact__ico" aria-hidden="true">📶</span><strong>Gratis WLAN</strong><span>Fragt an der Kasse</span></div>
+        <div class="fact"><span class="fact__ico" aria-hidden="true">🌈</span><strong>Everyone is welcome</strong><span>Bei uns ist jeder willkommen</span></div>
       </div>
     </section>
 
@@ -129,6 +260,17 @@
     </span>
   </footer>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const tabs = document.querySelectorAll('.tab');
+    tabs.forEach(tab => tab.addEventListener('click', () => {
+      tabs.forEach(t => {
+        const on = t === tab;
+        t.classList.toggle('is-active', on);
+        t.setAttribute('aria-selected', on);
+        document.querySelector(`[data-panel="${t.dataset.tab}"]`).hidden = !on;
+      });
+    }));
+  </script>
 </body>
 </html>
