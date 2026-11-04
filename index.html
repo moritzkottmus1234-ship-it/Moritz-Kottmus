@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yarok – Syrisches Restaurant in Berlin-Mitte</title>
+  <meta name="description" content="Yarok – syrisches Restaurant an der Torstraße 195 in Berlin-Mitte. Fladenbrote, Salate und gemischte Platten nach orientalischer Art. Vegane Gerichte, Sitzplätze im Freien, zum Mitnehmen und Lieferung.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Yarok",
+    "servesCuisine": "Syrisch",
+    "priceRange": "10–20 €",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Torstraße 195",
+      "postalCode": "10115",
+      "addressLocality": "Berlin",
+      "addressCountry": "DE"
+    },
+    "url": "https://www.yarok-restaurant.de",
+    "acceptsReservations": false
+  }
+  </script>
+</head>
+<body>
+
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a href="#top" class="logo" aria-label="Yarok – zur Startseite">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path d="M16 3c6 5 9 10 9 15a9 9 0 0 1-18 0c0-5 3-10 9-15z" fill="currentColor"/><path d="M16 10v18" stroke="var(--cream)" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </span>
+        Yarok
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menü öffnen">
+        <span></span><span></span>
+      </button>
+      <nav id="nav-links" class="nav__links">
+        <a href="#speisen">Speisekarte</a>
+        <a href="#ueber-uns">Über uns</a>
+        <a href="#besuch">Besuch</a>
+        <a href="#besuch" class="btn btn--small">Route</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow"><span class="status" id="open-status">Torstraße 195 · Berlin-Mitte</span></p>
+          <h1>Syrische Küche,<br><em>frisch &amp; grün.</em></h1>
+          <p class="lead">Warme Fladenbrote, knusprige Falafel, bunte Salate und großzügige Platten nach orientalischer Art – serviert an langen Gemeinschaftstischen mitten in Mitte.</p>
+          <div class="hero__cta">
+            <a href="#speisen" class="btn">Zur Speisekarte</a>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Yarok+Torstra%C3%9Fe+195+10115+Berlin" class="btn btn--ghost" target="_blank" rel="noopener">Route planen</a>
+          </div>
+          <ul class="hero__facts">
+            <li><strong>4,6 ★</strong><span>2.408 Google-Bewertungen</span></li>
+            <li><strong>10–20 €</strong><span>pro Person</span></li>
+            <li><strong>bis 23 Uhr</strong><span>geöffnet</span></li>
+          </ul>
+        </div>
+        <div class="hero__art" aria-hidden="true">
+          <div class="plate">
+            <div class="plate__ring"></div>
+            <span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span>
+            <span class="dot d4"></span><span class="dot d5"></span><span class="dot d6"></span>
+            <span class="leaf l1"></span><span class="leaf l2"></span><span class="leaf l3"></span>
+            <span class="hummus"></span>
+          </div>
+          <div class="badge-round">
+            <span>100 %<br>vegan<br>möglich</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES STRIP -->
+    <section class="strip" aria-label="Auf einen Blick">
+      <div class="wrap strip__inner">
+        <div class="strip__item"><span class="ico">🌿</span> Vegane Gerichte</div>
+        <div class="strip__item"><span class="ico">☀️</span> Sitzplätze im Freien</div>
+        <div class="strip__item"><span class="ico">🥡</span> Zum Mitnehmen</div>
+        <div class="strip__item"><span class="ico">🛵</span> Lieferung</div>
+        <div class="strip__item"><span class="ico">🪑</span> Einfach vorbeikommen – keine Reservierung nötig</div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section" id="speisen">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="eyebrow">Speisekarte</p>
+          <h2>Was auf den Tisch kommt</h2>
+          <p class="muted">Alles frisch zubereitet. Fragt uns gerne nach veganen Varianten und Allergenen.</p>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Kategorien">
+          <button role="tab" aria-selected="true" aria-controls="tab-sandwich" id="t-sandwich" class="tab is-active">Fladenbrote</button>
+          <button role="tab" aria-selected="false" aria-controls="tab-platten" id="t-platten" class="tab">Platten</button>
+          <button role="tab" aria-selected="false" aria-controls="tab-salate" id="t-salate" class="tab">Salate &amp; Beilagen</button>
+          <button role="tab" aria-selected="false" aria-controls="tab-drinks" id="t-drinks" class="tab">Getränke</button>
+        </div>
+
+        <!-- HINWEIS: Gerichte und Preise sind Platzhalter und müssen mit der aktuellen Karte abgeglichen werden. -->
+        <div class="menu" id="tab-sandwich" role="tabpanel" aria-labelledby="t-sandwich">
+          <article class="dish dish--featured">
+            <div>
+              <h3>Falafel Sandwich <span class="tag tag--vegan">vegan</span> <span class="tag">Beliebt</span></h3>
+              <p>Hausgemachte Falafel im warmen Fladenbrot mit Hummus, Tahini, eingelegtem Gemüse, Tomate und frischer Petersilie.</p>
+            </div>
+            <span class="price">€ –,–</span>
+          </article>
+          <article class="dish">
+            <div>
+              <h3>Halloumi Sandwich</h3>
+              <p>Gegrillter Halloumi, Tomate, Gurke, Minze und Granatapfelsirup.</p>
+            </div>
+            <span class="price">€ –,–</span>
+          </article>
+          <article class="dish">
+            <div>
+              <h3>Shawarma Sandwich</h3>
+              <p>Mariniertes, gegrilltes Fleisch mit Knoblauchcreme, Pickles und Pommes im Fladenbrot.</p>
+            </div>
+            <span class="price">€ –,–</span>
+          </article>
+          <article class="dish">
+            <div>
+              <h3>Sabich Sandwich <span class="tag tag--vegan">vegan möglich</span></h3>
+              <p>Gebratene Aubergine, Ei, Kartoffel, Amba und Tahini.</p>
+            </div>
+            <span class="price">€ –,–</span>
+          </article>
+        </div>
+
+        <div class="menu" id="tab-platten" role="tabpanel" aria-labelledby="t-platten" hidden>
+          <article class="dish dish--featured">
+            <div>
+              <h3>Gemischte Platte <span class="tag tag--vegan">vegan</span></h3>
+              <p>Falafel, Hummus, Baba Ghanoush, Tabouleh, Salat und warmes Fladenbrot – ideal zum Teilen.</p>
+            </div>
+            <span class="price">€ –,–</span>
+          </article>
+          <article class="dish">
+            <div>
+              <h3>Halloumi-Platte</h3>
+              <p>Gegrillter Halloumi mit Hummus, Salaten der Saison und Brot.</p>
+            </div>
+            <span class="price">€ –,–</span>
+          </article>
+          <article class="dish">
+            <div>
+              <h3>Shawarma-Platte</h3>
+              <p>Shawarma mit Reis oder Pommes, Knoblauchcreme, Salat und Pickles.</p>
+            </div>
+            <span class="price">€ –,–</span>
+          </article>
+        </div>
+
+        <div class="menu" id="tab-salate" role="tabpanel" aria-labelledby="t-salate" hidden>
+          <article class="dish">
+            <div>
+              <h3>Fattoush <span class="tag tag--vegan">vegan</span></h3>
+              <p>Knackiger Salat mit geröstetem Brot, Sumach, Radieschen und Granatapfel.</p>
+            </div>
+            <span class="price">€ –,–</span>
+          </article>
+          <article class="dish">
+            <div>
+              <h3>Tabouleh <span class="tag tag--vegan">vegan</span></h3>
+              <p>Petersilie, Bulgur, Tomate, Minze, Zitrone und Olivenöl.</p>
+            </div>
+            <span class="price">€ –,–</span>
+          </article>
+          <article class="dish">
+            <div>
+              <h3>Hummus <span class="tag tag--vegan">vegan</span></h3>
+              <p>Cremig, mit Olivenöl, Paprika und Brot.</p>
+            </div>
+            <span class="price">€ –,–</span>
+          </article>
+          <article class="dish">
+            <div>
+              <h3>Baba Ghanoush <span class="tag tag--vegan">vegan</span></h3>
+              <p>Rauchige Auberginencreme mit Tahini und Granatapfel.</p>
+            </div>
+            <span class="price">€ –,–</span>
+          </article>
+        </div>
+
+        <div class="menu" id="tab-drinks" role="tabpanel" aria-labelledby="t-drinks" hidden>
+          <article class="dish">
+            <div>
+              <h3>Frische Minzlimonade</h3>
+              <p>Zitrone, frische Minze, gut gekühlt.</p>
+            </div>
+            <span class="price">€ –,–</span>
+          </article>
+          <article class="dish">
+            <div>
+              <h3>Ayran</h3>
+              <p>Erfrischendes Joghurtgetränk.</p>
+            </div>
+            <span class="price">€ –,–</span>
+          </article>
+          <article class="dish">
+            <div>
+              <h3>Schwarzer Tee mit Kardamom</h3>
+              <p>Klassisch, heiß und süß nach Wunsch.</p>
+            </div>
+            <span class="price">€ –,–</span>
+          </article>
+        </div>
+
+        <p class="menu__note">Die vollständige, tagesaktuelle Karte findet ihr vor Ort.</p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section--green" id="ueber-uns">
+      <div class="wrap about">
+        <div class="about__text">
+          <p class="eyebrow eyebrow--light">Über uns</p>
+          <h2>Ein lebhafter Ort für gutes Essen</h2>
+          <p>Bei Yarok sitzt man zusammen. An unseren langen Gemeinschaftstischen kommen Nachbarn, Kolleginnen und Reisende ins Gespräch – über einem Teller Hummus, frisch frittierten Falafel und Brot, das noch warm ist.</p>
+          <p>Unsere Küche ist syrisch geprägt, unkompliziert und großzügig. Viele Gerichte sind von Haus aus vegan, und im Sommer genießt ihr alles draußen auf der Torstraße.</p>
+        </div>
+        <div class="about__cards">
+          <div class="card">
+            <span class="card__num">01</span>
+            <h3>Frisch</h3>
+            <p>Falafel, Dips und Salate bereiten wir täglich frisch zu.</p>
+          </div>
+          <div class="card">
+            <span class="card__num">02</span>
+            <h3>Gemeinsam</h3>
+            <p>Gemeinschaftstische statt Reservierungen – einfach vorbeikommen.</p>
+          </div>
+          <div class="card">
+            <span class="card__num">03</span>
+            <h3>Fair</h3>
+            <p>Satt werden für 10–20 € pro Person.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section class="section" id="besuch">
+      <div class="wrap visit">
+        <div class="visit__info">
+          <p class="eyebrow">Besuch</p>
+          <h2>Kommt vorbei</h2>
+
+          <div class="info-block">
+            <h3>Adresse</h3>
+            <p>Torstraße 195<br>10115 Berlin-Mitte</p>
+            <a class="link" href="https://www.google.com/maps/dir/?api=1&destination=Yarok+Torstra%C3%9Fe+195+10115+Berlin" target="_blank" rel="noopener">Route in Google Maps →</a>
+          </div>
+
+          <div class="info-block">
+            <h3>Öffnungszeiten</h3>
+            <!-- HINWEIS: Genaue Öffnungszeiten je Wochentag ergänzen. -->
+            <p>Geöffnet bis 23:00 Uhr</p>
+            <p class="muted small">Keine Reservierungen – wir freuen uns auf spontanen Besuch.</p>
+          </div>
+
+          <div class="info-block">
+            <h3>Zum Mitnehmen &amp; Lieferung</h3>
+            <p>Alle Gerichte gibt es auch zum Mitnehmen. Lieferung über die gängigen Lieferdienste.</p>
+          </div>
+        </div>
+        <div class="visit__map">
+          <iframe
+            title="Karte: Yarok, Torstraße 195, 10115 Berlin"
+            src="https://www.google.com/maps?q=Torstra%C3%9Fe+195,+10115+Berlin&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div>
+        <a href="#top" class="logo logo--light">Yarok</a>
+        <p class="small">Syrisches Restaurant · Torstraße 195 · 10115 Berlin</p>
+      </div>
+      <nav class="footer__links small">
+        <a href="#speisen">Speisekarte</a>
+        <a href="#besuch">Anfahrt</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+      <p class="small footer__copy">© <span id="year"></span> Yarok</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
